@@ -62,7 +62,7 @@ namespace NwareAppsInstaller
             //start explorer++ to show the apps folder
             Logger.StartLogger("Starting Explorer++");
             Process process = new Process();
-            process.StartInfo.FileName = strings.ExplorerPPFinal;
+            process.StartInfo.FileName = @"C:/Apps/Explorer++/Explorer++.exe";
             process.StartInfo.Arguments = @"C:/Apps/";
             process.Start();
 
