@@ -17,12 +17,12 @@ namespace NwareAppsInstaller.Core
         public static string SzipFinalDir = @"C:/Apps/7-zip";
         public static string DiscordFinal = @"C:/Apps/Discord";
         public static string ChromeFInal = @"C:/Apps/Chrome";
-        public static string NotCMDNvidiaFInal = @"C:/Apps/CMD";
+        public static string NotCMDNvidiaFInal = @"C:/Apps/NotCMD";
         public static string ExplorerPPFinal = @"C:/Apps/Explorer++";
         public static string OBSDFinal = @"C:/Apps/OBS";
         public static string WinXShellFinal = @"C:/Apps/WinXShell";
 
-        public static string CMDFInalExe = @"C:/Apps/CMD/NotCMDNvidia.exe";
+        public static string CMDFInalExe = @"C:/Apps/NotCMD/NotCMDNvidia.exe";
         public static string ExplorerPPFinalExe = @"C:/Apps/Explorer++/Explorer++.exe";
         public static string WinXShellFInalExe = @"C:/Apps/WinXShell/StartWinXShell.exe";
     }
