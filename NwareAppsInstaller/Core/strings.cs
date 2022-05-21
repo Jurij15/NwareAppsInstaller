@@ -21,5 +21,9 @@ namespace NwareAppsInstaller.Core
         public static string ExplorerPPFinal = @"C:/Apps/Explorer++";
         public static string OBSDFinal = @"C:/Apps/OBS";
         public static string WinXShellFinal = @"C:/Apps/WinXShell";
+
+        public static string CMDFInalExe = @"C:/Apps/CMD/NotCMDNvidia.exe";
+        public static string ExplorerPPFinalExe = @"C:/Apps/Explorer++/Explorer++.exe";
+        public static string WinXShellFInalExe = @"C:/Apps/WinXShell/StartWinXShell.exe";
     }
 }

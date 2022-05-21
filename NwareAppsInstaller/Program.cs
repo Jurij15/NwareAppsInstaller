@@ -32,7 +32,7 @@ namespace NwareAppsInstaller
             Logger.StartLogger("Downloading Discord...");
             Downloader.StartDownloader(strings.DiscordDownload, "C:/Apps/Temp/Discord.zip");
             Logger.StartLogger("Extracting Discord...");
-            ZipFile.ExtractToDirectory("C:/Apps/Temp/Discord.zip", strings.SzipFinalDir);
+            ZipFile.ExtractToDirectory("C:/Apps/Temp/Discord.zip", strings.DiscordFinal);
             Logger.StartLogger("Downloaded Discord...");
             //download chrome
             Logger.StartLogger("Downloading Chrome...");
@@ -42,11 +42,11 @@ namespace NwareAppsInstaller
             Logger.StartLogger("Downloaded Chrome...");
             //download cmd
             Logger.StartLogger("Downloading CMD...");
-            Downloader.StartDownloader(strings.NotCMDNvidiaDownload, strings.NotCMDNvidiaFInal);
+            Downloader.StartDownloader(strings.NotCMDNvidiaDownload, strings.CMDFInalExe);
             Logger.StartLogger("Downloaded CMD...");
             //download explorer++
             Logger.StartLogger("Downloading Explorer++...");
-            Downloader.StartDownloader(strings.ExplorerPP, strings.ExplorerPPFinal);
+            Downloader.StartDownloader(strings.ExplorerPP, strings.ExplorerPPFinalExe);
             Logger.StartLogger("Downloaded Explorer++...");
             //download OBS
             Logger.StartLogger("Downloading OBS...");
@@ -56,7 +56,7 @@ namespace NwareAppsInstaller
             Logger.StartLogger("Downloaded OBS...");
             //WINXSHELL download
             Logger.StartLogger("Downloading WinXShell...");
-            Downloader.StartDownloader(strings.WinXShellDownload, strings.WinXShellFinal);
+            Downloader.StartDownloader(strings.WinXShellDownload, strings.WinXShellFInalExe);
             Logger.StartLogger("Downloaded WinXShell...");
 
             //start explorer++ to show the apps folder
