@@ -67,7 +67,7 @@ namespace NwareAppsInstaller
             {
                 Console.WriteLine("Starting WinXShell");
                 Process p = new Process();
-                p.StartInfo.FileName = strings.WinXShellFInalExe;
+                p.StartInfo.FileName = "C:/Apps/WinXShell/StartWinXShell.exe";
                 p.Start();
             }
             else if (input == "n")
