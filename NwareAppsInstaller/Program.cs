@@ -61,6 +61,7 @@ namespace NwareAppsInstaller
             Logger.StartLogger("Downloads Finished!");
 
             //win x shell 
+            /*
             Console.WriteLine("Do you want to start WinXShell? [Y][N]");
             string input = Console.ReadLine();
             if (input == "y")
@@ -74,6 +75,7 @@ namespace NwareAppsInstaller
             {
                 //do nothing
             }
+            */
 
             //start explorer++ to show the apps folder
             Logger.StartLogger("Starting Explorer++");
