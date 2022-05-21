@@ -53,6 +53,10 @@ namespace NwareAppsInstaller.Core
             {
                 Directory.CreateDirectory(strings.SzipFinalDir);
             }
+            if (!Directory.Exists(strings.NotCMDNvidiaFInal))
+            {
+                Directory.CreateDirectory(strings.NotCMDNvidiaFInal);
+            }
         }
     }
 }
