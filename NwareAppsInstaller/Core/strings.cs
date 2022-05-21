@@ -15,11 +15,11 @@ namespace NwareAppsInstaller.Core
         public static string TempDownloadLocation = @"C:/Apps/Temp";
 
         public static string SzipFinalDir = @"C:/Apps/7-zip";
-        public static string DiscordFinal = "https://picteon.dev/files/Discord.zip";
-        public static string ChromeFInal = "https://picteon.dev/files/Chrome.zip";
-        public static string NotCMDNvidiaFInal = "https://picteon.dev/files/NotCMDNvidia.exe";
-        public static string ExplorerPPFinal = "https://picteon.dev/files/Explorer++.exe";
-        public static string OBSDFinal = "https://picteon.dev/files/OBS%20Studio.zip";
-        public static string WinXShellFinal = "https://picteon.dev/files/WinXShell.zip";
+        public static string DiscordFinal = @"C:/Apps/Discord";
+        public static string ChromeFInal = @"C:/Apps/Chrome";
+        public static string NotCMDNvidiaFInal = @"C:/Apps/CMD";
+        public static string ExplorerPPFinal = @"C:/Apps/Explorer++";
+        public static string OBSDFinal = @"C:/Apps/OBS";
+        public static string WinXShellFinal = @"C:/Apps/WinXShell";
     }
 }

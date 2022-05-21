@@ -16,6 +16,7 @@ namespace NwareAppsInstaller.Core
                 Directory.CreateDirectory("C:/Apps");
             }
             CreateDIr.CreateTempDir();
+            CreateDIr.CreateAPPDirs();
         }
 
         public static void CreateTempDir()
@@ -23,6 +24,34 @@ namespace NwareAppsInstaller.Core
             if (!Directory.Exists(@"C:/Apps/Temp"))
             {
                 Directory.CreateDirectory("C:/Apps/Temp");
+            }
+        }
+
+        public static void CreateAPPDirs()
+        {
+            if (!Directory.Exists(strings.WinXShellFinal))
+            {
+                Directory.CreateDirectory(strings.WinXShellFinal);
+            }
+            if (!Directory.Exists(strings.ExplorerPPFinal))
+            {
+                Directory.CreateDirectory(strings.ExplorerPPFinal);
+            }
+            if (!Directory.Exists(strings.OBSDFinal))
+            {
+                Directory.CreateDirectory(strings.OBSDFinal);
+            }
+            if (!Directory.Exists(strings.ChromeFInal))
+            {
+                Directory.CreateDirectory(strings.ChromeFInal);
+            }
+            if (!Directory.Exists(strings.DiscordFinal))
+            {
+                Directory.CreateDirectory(strings.DiscordFinal);
+            }
+            if (!Directory.Exists(strings.SzipFinalDir))
+            {
+                Directory.CreateDirectory(strings.SzipFinalDir);
             }
         }
     }

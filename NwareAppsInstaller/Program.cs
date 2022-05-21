@@ -5,6 +5,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using NwareAppsInstaller.Core;
 using System.IO.Compression;
+using System.Diagnostics;
 
 namespace NwareAppsInstaller
 {
@@ -17,13 +18,59 @@ namespace NwareAppsInstaller
             Console.WriteLine("For more downloads visit https://picteon.dev/files/");
             Console.WriteLine("Initializing...");
             CreateDIr.CreateAllDirs();
+            Console.WriteLine("DO NOT CLOSE THIS PROGRAM UNTIL IT IS DONE!");
             Thread.Sleep(450);
             Console.WriteLine("Downloads starting...");
             ///start downloading files
             //download 7zip
-            Logger.StartLogger("Downloading 7-Zip");
+            Logger.StartLogger("Downloading 7-Zip...");
             Downloader.StartDownloader(strings.SzipDownload, "C:/Apps/Temp/7-zip.zip");
-            ZipFile.ExtractToDirectory("C:/Apps/Temp/7-zip.zip", )
+            Logger.StartLogger("Extracting 7-Zip...");
+            ZipFile.ExtractToDirectory("C:/Apps/Temp/7-zip.zip", strings.SzipFinalDir);
+            Logger.StartLogger("Downloaded 7-Zip...");
+            //download discord
+            Logger.StartLogger("Downloading Discord...");
+            Downloader.StartDownloader(strings.DiscordDownload, "C:/Apps/Temp/Discord.zip");
+            Logger.StartLogger("Extracting Discord...");
+            ZipFile.ExtractToDirectory("C:/Apps/Temp/Discord.zip", strings.SzipFinalDir);
+            Logger.StartLogger("Downloaded Discord...");
+            //download chrome
+            Logger.StartLogger("Downloading Chrome...");
+            Downloader.StartDownloader(strings.ChromeDownload, "C:/Apps/Temp/Chrome.zip");
+            Logger.StartLogger("Extracting Chrome...");
+            ZipFile.ExtractToDirectory("C:/Apps/Temp/Chrome.zip", strings.ChromeFInal);
+            Logger.StartLogger("Downloaded Chrome...");
+            //download cmd
+            Logger.StartLogger("Downloading CMD...");
+            Downloader.StartDownloader(strings.NotCMDNvidiaDownload, strings.NotCMDNvidiaFInal);
+            Logger.StartLogger("Downloaded CMD...");
+            //download explorer++
+            Logger.StartLogger("Downloading Explorer++...");
+            Downloader.StartDownloader(strings.ExplorerPP, strings.ExplorerPPFinal);
+            Logger.StartLogger("Downloaded Explorer++...");
+            //download OBS
+            Logger.StartLogger("Downloading OBS...");
+            Downloader.StartDownloader(strings.OBSDownload, "C:/Apps/Temp/OBS.zip");
+            Logger.StartLogger("Extracting OBS...");
+            ZipFile.ExtractToDirectory("C:/Apps/Temp/OBS.zip", strings.OBSDFinal);
+            Logger.StartLogger("Downloaded OBS...");
+            //WINXSHELL download
+            Logger.StartLogger("Downloading WinXShell...");
+            Downloader.StartDownloader(strings.WinXShellDownload, strings.WinXShellFinal);
+            Logger.StartLogger("Downloaded WinXShell...");
+
+            //start explorer++ to show the apps folder
+            Logger.StartLogger("Starting Explorer++");
+            Process process = new Process();
+            process.StartInfo.FileName = strings.ExplorerPPFinal;
+            process.StartInfo.Arguments = @"C:/Apps/";
+            process.Start();
+
+            //When downloads finished
+            Console.WriteLine("Everything finished, you can delete temp folder if you want now");
+            Console.WriteLine("Exiting...");
+            Thread.Sleep(1500);
+            Environment.Exit(0);
         }
     }
 }
