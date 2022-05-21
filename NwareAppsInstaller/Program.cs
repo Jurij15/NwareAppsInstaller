@@ -59,6 +59,10 @@ namespace NwareAppsInstaller
             Downloader.StartDownloader(strings.WinXShellDownload, strings.WinXShellFInalExe);
             Logger.StartLogger("Downloaded WinXShell...");
 
+            //win x shell 
+            EnableWinXShell enableWinXShell = new EnableWinXShell();
+            enableWinXShell.WinXShell();
+
             //start explorer++ to show the apps folder
             Logger.StartLogger("Starting Explorer++");
             Process process = new Process();
