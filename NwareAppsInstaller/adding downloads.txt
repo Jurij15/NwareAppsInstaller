@@ -1,0 +1,4 @@
+﻿1.add download string
+2.add final directory
+3.create directory in CreateDIr.cs
+4.replicate the download process in Program.cs
